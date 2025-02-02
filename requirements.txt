@@ -1,0 +1,6 @@
+streamlit
+streamlit-js-eval
+requests
+beautifulsoup4
+html5lib
+supabase
