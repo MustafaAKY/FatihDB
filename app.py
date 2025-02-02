@@ -546,7 +546,7 @@ with tab33:
             st.markdown(f"<h1 style='color: green; font-size: 36px;'>GÖNDERİLEN KARGO {sayı} </h1>", unsafe_allow_html=True)
 
 with tab44:
-    gecmis_kargo = st.date_input("Tarih Seç",key="1")
+    gecmis_kargo = st.date_input("Tarih Seç",key="saat1")
     gecmis_kargo_bitis = st.date_input("Tarih Seç")
     if gecmis_kargo:
             gecmis_kargo_baslangic = (gecmis_kargo.strftime("%Y-%m-%d")) 
