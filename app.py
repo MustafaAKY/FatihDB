@@ -508,7 +508,7 @@ with tab33:
 
                 liste.append({"TAKİP KODU":veriler[4], 
                   "İSİM SOYİSİM":veriler[5],
-                  "TELEFON NU":veriler[17],
+                  "TELEFON NU":veriler[19],
                   "SONUÇ":veriler[9],
                   "KARGO ŞUBESİ":veriler[10],
                   "ÜCRET":veriler[13]+" TL"  })   
