@@ -489,7 +489,7 @@ with tab33:
         if tarih_bitis:
             tarih_bitis = (tarih_bitis.strftime("%d.%m.%Y"))    
             
-        if st.button("ŞUBEDE BEKLEYEN KARGOLARI LİSTELE"):    
+        if st.button("I LİSTELE"):    
             giris = requests.post(login_link, headers=headers, data=form_data,cookies=login_response.cookies)
             kullanici = BS(giris.content, "html.parser")
             cookie = login_response.cookies
@@ -509,8 +509,8 @@ with tab33:
                 liste.append({"TAKİP KODU":veriler[4], 
                   "İSİM SOYİSİM":veriler[5],
                   "TELEFON NU":veriler[19],
-                  "SONUÇ":veriler[10],
-                  "KARGO ŞUBESİ":veriler[10],
+                  "SONUÇ":veriler[9],
+                  "KARGO ŞUBESİ":veriler[11],
                   "ÜCRET":veriler[13]+" TL"  })   
                 
         
