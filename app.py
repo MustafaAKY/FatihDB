@@ -489,7 +489,7 @@ with tab33:
         if tarih_bitis:
             tarih_bitis = (tarih_bitis.strftime("%d.%m.%Y"))    
             
-        if st.button("I LİSTELE"):    
+        if st.button("ŞUBEDE BEKLEYEN KARGOLARI LİSTELE"):    
             giris = requests.post(login_link, headers=headers, data=form_data,cookies=login_response.cookies)
             kullanici = BS(giris.content, "html.parser")
             cookie = login_response.cookies
