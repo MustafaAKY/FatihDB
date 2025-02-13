@@ -503,13 +503,14 @@ with tab33:
             for satir in tablo:
                 sütunlar = satir.find_all("td")
                 veriler = [sütun.get_text(strip=True) for sütun in sütunlar]
-                if veriler[9] == "Teslim" or veriler[9] == "Paketleme" or veriler[8] == "İade" or veriler[9] == "Yolda" or veriler[9] == "Çıkış Şubesinde":
+                if veriler[9] == "Teslim" or veriler[9] == "Paketleme" or veriler[8] == "İade" or veriler[9] == "Yolda" or veriler[9] == "Çıkış Şubesinde" or veriler[9] == "":
                     continue
 
                 liste.append({"TAKİP KODU":veriler[4], 
                   "İSİM SOYİSİM":veriler[5],
                   "TELEFON NU":veriler[19],
                   "SONUÇ":veriler[9],
+                  "Durum":veriler[10],            
                   "KARGO ŞUBESİ":veriler[11],
                   "ÜCRET":veriler[14]+" TL"  })   
                 
